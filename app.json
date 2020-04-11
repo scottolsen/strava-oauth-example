@@ -1,0 +1,5 @@
+{
+  "name": "Strava OAuth Example",
+  "description": "Basic OAuth example using the strava-ruby-client gem",
+  "repository": "https://github.com/scottolsen/strava-oauth-example"
+}
