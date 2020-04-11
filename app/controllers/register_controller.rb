@@ -18,10 +18,10 @@ class RegisterController < ApplicationController
 
   def strava_url
     client.authorize_url(
-      redirect_uri: ENV['STRAVA_REDIRECT_URI']
+      redirect_uri: ENV['STRAVA_REDIRECT_URI'],
       approval_prompt: 'force',
-        response_type: 'code',
-        scope: 'profile:read_all,activity:read_all',
+      response_type: 'code',
+      scope: 'profile:read_all,activity:read_all'
     )
   end
 end
